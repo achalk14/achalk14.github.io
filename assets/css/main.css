@@ -1240,6 +1240,8 @@ button {
 	-ms-transform: scale(1.0);
 	transform: scale(1.0);
 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -1268,7 +1270,7 @@ button {
 	-webkit-transition-delay: 0.75s;
 	-ms-transition-delay: 0.75s;
 	transition-delay: 0.75s;
-	background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/overlay.png");
 	background-size: auto,
 		256px 256px;
 	background-position: center,
@@ -1287,10 +1289,7 @@ button {
 	-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 	-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-	background-image: url("../../images/bg.jpg");
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-image: linear-gradient(135deg, #fdfbf7 0%, #f3e5d8 50%, #ffffff 100%);
 	z-index: 1;
 }
 
@@ -1383,10 +1382,10 @@ body.is-preload #bg:before {
 	-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 	-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-	background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-	background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-	background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-	background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+	background-image: -moz-radial-gradient(rgba(60, 60, 60, 0.9) 35%, rgba(60, 60, 60, 0) 65%);
+	background-image: -webkit-radial-gradient(rgba(60, 60, 60, 0.9) 35%, rgba(60, 60, 60, 0) 65%);
+	background-image: -ms-radial-gradient(rgba(60, 60, 60, 0.9) 35%, rgba(60, 60, 60, 0) 65%);
+	background-image: radial-gradient(rgba(60, 60, 60, 0.9) 35%, rgba(60, 60, 60, 0) 65%);
 	max-width: 100%;
 	text-align: center;
 }
@@ -1675,7 +1674,7 @@ body.is-preload #header .content .inner {
 	position: relative;
 	width: 40rem;
 	max-width: 100%;
-	background-color: rgba(27, 31, 34, 0.85);
+	background-color: rgba(60, 60, 60, 0.95);
 	border-radius: 4px;
 	opacity: 0;
 }
@@ -1771,6 +1770,13 @@ body.is-preload #header .content .inner {
 	opacity: 0.75;
 	margin-bottom: 0;
 	text-transform: uppercase;
+	color: #3c3c3c;
+}
+
+#footer .copyright a {
+	color: inherit;
+	border-bottom-color: rgba(60, 60, 60, 0.5);
+
 }
 
 body.is-article-visible #footer {
